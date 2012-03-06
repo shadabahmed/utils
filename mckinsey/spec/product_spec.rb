@@ -1,5 +1,5 @@
 require 'spec_helper'
-
+# Rspec test cases for Product class
 describe Product do
   before :each do
     @product = Product.new(400, false)

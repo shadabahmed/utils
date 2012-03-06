@@ -1,5 +1,5 @@
 require 'spec_helper'
-
+# Rspec test cases for User class
 describe User do
   before :each do
     @user = User.new(true,false,1)

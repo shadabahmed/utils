@@ -1,3 +1,4 @@
+# Product class with price attribute and method to identify if this is gorcery item
 class Product
   attr_reader :price
 

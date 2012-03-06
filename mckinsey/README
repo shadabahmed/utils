@@ -1,0 +1,26 @@
+This folder has following structure:
+
+├── bill.rb
+├── product.rb
+|── user.rb
+└── spec
+    ├── bill_spec.rb
+    ├── product_spec.rb
+    |── user_spec.rb
+    ├── README
+    ├── spec_helper.rb
+    └── support
+        └── matchers
+            └── be_same_number_as.rb
+
+
+
+Files bill.rb, product.rb and user.rb are main class files of the code.
+
+Directory spec contains test cases for the classes defined, using rspec and additional match helpers for rspec.
+
+To run the test cases:
+
+> rspec spec
+
+This code has been tested in Ruby version 1.9.2 and Rspec gem version 2.8.0
