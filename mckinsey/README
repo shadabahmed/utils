@@ -1,12 +1,12 @@
-This folder has following structure:
+This project has following file structure:
 
 ├── bill.rb
 ├── product.rb
-|── user.rb
+├── user.rb
 └── spec
     ├── bill_spec.rb
     ├── product_spec.rb
-    |── user_spec.rb
+    ├── user_spec.rb
     ├── README
     ├── spec_helper.rb
     └── support
