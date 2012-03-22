@@ -87,5 +87,6 @@ p end_time - start_time
 
 p @optimal_sol
 =end
-puts find_cost(matrices)[3]
+puts find_cost_mem(matrices)[3]
+puts @prev_results
 #p find_cost matrices
