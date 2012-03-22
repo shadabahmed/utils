@@ -1,0 +1,19 @@
+This is implementation of LRU in ruby. All the classes related to LRU are in module LRUCache.
+
+LRU is implemented using a hash and a doubly linked link list. Head of the link list contains the most recently used entry while tail is the least recently used. When cache starts to get full, the least recently used entry is removed. Further on any read and writes, the node corresponding to the key becomes the new head of the link list. Hash hold the key to the link list node mapping. Final value is stored in node.value . All the methods which modify object state are made thread safe using the Mutex class.
+
+Fils structure
+
+├── approx_lru.rb     # LRU implementation for higher concurrency and approximate LRU replacement
+├── lru_node.rb       # Node class for the doubly linked link list 
+├── lru.rb            # LRU implementation class with put , get and remove methods   
+├── spec              # Contains rspec test cases
+│   ├── lru_spec.rb
+│   └── spec_helper.rb
+└── use_lru.rb        # Sample usage for both lru and approx_lru 
+
+The code has been tested in Ruby 1.9.2
+
+* To run the test cases - "rspec spec"
+* To see a demonstration of the LRU and its internals - "ruby use_lru.rb"
+
