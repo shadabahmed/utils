@@ -43,7 +43,14 @@ describe Bill do
       @bill.total.should be_same_number_as 1000
     end
   end
-  
+ 
+  describe "#add_product" do
+    it "should add product and update total" do
+      @bill.add_product Product.new(200, true)
+      @bill.total.should be_same_number_as 1200
+    end
+  end
+ 
   describe "#discounted_total" do
 
     it "should return discounted amount for a store employee" do

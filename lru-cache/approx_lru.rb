@@ -1,3 +1,4 @@
+require './lru'
 module LRUCache
   class ApproxCache < Cache
     # Override the get method

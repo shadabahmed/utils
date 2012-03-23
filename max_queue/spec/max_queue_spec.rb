@@ -65,7 +65,15 @@ describe MaxQueue do
           arr.shift
         end
       end
+    end   
+  end
+ 
+  describe '#print' do
+    it "should print out the object state" do
+      100.downto(7) do |i|
+        @queue.queue((1..i).to_a)
+      end
+      capture(:stdout){ @queue.print }.should_not eql ""
     end
-
   end
 end
